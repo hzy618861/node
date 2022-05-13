@@ -3,9 +3,8 @@ var fs = require("fs");
 var url = require("url");
 var path = require("path");
 const OSS = require('ali-oss')
-const client = new OSS({
-   
-  });
+var config = require('../oss.json')
+const client = new OSS(config);
 module.exports = function downLoad(){
     //解析指定url数据，上传阿里云oss
     function parseData(targetUrl,response){
@@ -49,7 +48,7 @@ module.exports = function downLoad(){
                         url参数为需要上传的资源 
                         
                         *******************************************************************************************
-                        http://localhost:8080/fetch?url=xx/nc.js
+                        http://localhost:8080/fetch?url=https://sqb-it.oss-cn-hangzhou.aliyuncs.com/union-web/nc.js
                         *******************************************************************************************`
                         
                         )
