@@ -48,7 +48,7 @@ module.exports = function downLoad(){
                         url参数为需要上传的资源 
                         
                         *******************************************************************************************
-                        http://localhost:8080/fetch?url=https://sqb-it.oss-cn-hangzhou.aliyuncs.com/union-web/nc.js
+                        http://localhost:8080/fetch?url=xx/xx.js
                         *******************************************************************************************`
                         
                         )
