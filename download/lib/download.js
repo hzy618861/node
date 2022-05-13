@@ -3,11 +3,7 @@ var fs = require("fs");
 var url = require("url");
 var path = require("path");
 const OSS = require('ali-oss')
-const client = new OSS({
-    accessKeyId: '',
-    accessKeySecret: '',
-    bucket: '',
-  });
+const client = new OSS({});
 module.exports = function downLoad(){
     //解析指定url数据，上传阿里云oss
     function parseData(targetUrl,response){
