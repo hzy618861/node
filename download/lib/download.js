@@ -8,7 +8,7 @@ const client = new OSS({
     accessKeySecret: 'sRL3yNu8iPtHx8KWubzqQYhUL0SdLA',
     bucket: 'sqb-it',
   });
-module.exports = function downLoad(hostname,path){
+module.exports = function downLoad(){
     //解析指定url数据，上传阿里云oss
     function parseData(targetUrl,response){
         if(!targetUrl) return
