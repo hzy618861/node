@@ -1,0 +1,15 @@
+{
+  "name": "tool",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "zli": "bin/index.js"
+  },
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "ali-oss": "^6.17.1"
+  }
+}
