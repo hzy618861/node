@@ -1,9 +1,7 @@
-var http = require("http");
-var fs = require("fs");
-var url = require("url");
-var path = require("path");
+const http = require("http");
+const url = require("url");
 const OSS = require('ali-oss')
-var config = require('../oss.json')
+const config = require('../oss.json')
 const client = new OSS(config);
 module.exports = function downLoad(){
     //解析指定url数据，上传阿里云oss
@@ -55,7 +53,7 @@ module.exports = function downLoad(){
             res.end();
         }
     })
-    server.listen(8080,()=>{
+    server.listen(8080,() => {
          console.log('listen at 8080')
     })
 }
